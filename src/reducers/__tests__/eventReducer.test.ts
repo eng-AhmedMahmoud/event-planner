@@ -11,10 +11,9 @@ describe('eventReducer', () => {
   };
 
   beforeAll(() => {
-    global.crypto = {
-      ...global.crypto,
-      randomUUID: vi.fn(() => "mock-uuid-1234") as () => `${string}-${string}-${string}-${string}-${string}`,
-    };
+    vi.mock('uuid', () => ({
+      v4: vi.fn(() => 'mock-uuid-1234'),
+    }));
   });
 
   it('should add an event', () => {

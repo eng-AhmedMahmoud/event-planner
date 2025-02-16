@@ -1,11 +1,12 @@
 import { Event, EventAction, EventState } from '../types/event';
+import { v4 as uuidv4 } from 'uuid';
 
 export const eventReducer = (state: EventState, action: EventAction): EventState => {
   switch (action.type) {
     case 'ADD_EVENT': {
       const newEvent: Event = {
         ...action.payload,
-        id: crypto.randomUUID(),
+        id: uuidv4(),
         status: "pending",
         lastModified: Date.now(),
         version: 1,
