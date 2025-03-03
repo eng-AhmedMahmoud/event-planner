@@ -8,7 +8,7 @@ export const HomePage: React.FC = () => {
 
   return (
     <div className="relative min-w-full min-h-screen overflow-hidden flex items-center justify-center p-4">
-      <VideoBackground videoSrc="/src/utils/background-video.mp4" />
+      <VideoBackground videoSrc="https://assets.mixkit.co/videos/22808/22808-720.mp4" />
       <div className="max-w-3xl w-full text-center space-y-8 z-20">
         <div className="flex justify-center">
           <Calendar className="h-20 w-20 text-blue-400" />
