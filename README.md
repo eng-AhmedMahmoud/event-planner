@@ -99,3 +99,9 @@ event-planner/
 ## Contributing
 
 Contributions are welcome! Please open an issue or submit a pull request for any improvements or bug fixes.
+
+## Hosting
+
+Live at https://event-planner-bwo.pages.dev (Cloudflare Pages, project `event-planner`).
+Deploy with `bash scripts/deploy-pages.sh`; the merge gate is `bash scripts/ci-local.sh`
+(install with pnpm 9, lint, tests, build).
